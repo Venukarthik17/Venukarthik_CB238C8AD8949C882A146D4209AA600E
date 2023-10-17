@@ -1,11 +1,10 @@
-def linearSearchProduct(productList, targetProduct):
-  indices = []
-  for index, product in enumerate(productList):
-   if product == targetProduct:
-     indices.append(index)
-  return indices
-products = ["shoes", "boot", "loafer", "shoes", "sandal","shoes"]
-target = "shoes"
-target2 = 'apple'
-result= linearSearchProduct(products, target)
-print(result)
+def fact(n):
+  if n == 0 or n == 1:
+    return 1
+  else:
+    return n * fact(n - 1)
+
+
+number = int(input("enter a value:"))
+res = fact(number)
+print("the factorial of {} is {}.".format(number, res))
